@@ -6,8 +6,32 @@
   <title>Kus mängida – Padel Tartus</title>
   <link rel="stylesheet" href="kohad.css">
 </head>
+
+
 <body>
-  <h1>Kus Tartus padelit mängida</h1>
-  <p>Siia tuleb nimekiri Tartu padelikeskustest.</p>
+  <header>
+    <a class="nav-button" href="../index.html">Avaleht</a>
+    <a class="nav-button" href="../opetus/opetus.html">Õpetus</a>
+    <h1>Kus Tartus padelit mängida</h1>
+    <p>Siia tuleb nimekiri Tartu padelikeskustest.</p>
+  <div class="filters">
+    <button type="button" data-filter="all">Kõik</button>
+    <button type="button" data-filter=".indoor">Sisehallid</button>
+    <button type="button" data-filter=".outdoor">Väliväljakud</button>
+  </div>
+  </header>
+
+
+  <div class="grid-container">
+    <div class="grid-item mix outdoor">Raadi Padel Park</div>
+    <div class="grid-item mix indoor">Padel+ Uus Maa</div>
+    <div class="grid-item mix indoor">Tõrvandi Padel Park</div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/mixitup@3.3.1/dist/mixitup.min.js"></script>
+<script>
+  mixitup('.grid-container');
+</script>
+
 </body>
 </html>
