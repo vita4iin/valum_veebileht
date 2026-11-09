@@ -7,7 +7,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 20px;
 }
@@ -17,12 +16,6 @@ header {
   color: #eaf4ea;
   padding: 20px;
   text-align: left;
-}
-
-.filters {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
 }
 
 a {
@@ -76,7 +69,6 @@ button {
   justify-content: center;
   background-color: #1f5d2c;
   border: 1px solid #ccc;
-  margin-bottom: 20px;
   width: calc((100% - 60px) / 4);
   height: 160px;
   padding: 20px;
