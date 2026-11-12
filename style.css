@@ -1,16 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    margin: 40px;
-    background-color: #f4f4f4;
     color: #222;
+    background: #fff;
 }
 
-h1 {
-    color: #1a73e8;
+header {
+    background: #222;
+    padding: 20px;
 }
 
-button {
-    padding: 10px 16px;
-    font-size: 16px;
-    cursor: pointer;
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #222;
+    color: #fff;
 }
