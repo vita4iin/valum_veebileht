@@ -4,21 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kus mängida?</title>
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="kohad.css">
 </head>
 
 <body>
   <header>
-    <a class="nav-button" href="../index.html">Avaleht</a>
-    <a class="nav-button" href="../opetus/opetus.html">Õpetus</a>
+    <nav>
+      <a class="nav-button" href="../index.html">Avaleht</a>
+      <a class="nav-button" href="../opetus/opetus.html">Õpetus</a>
+    </nav>
+  </header>
+
+  <main>
     <h1>Kus Tartus padelit mängida</h1>
     <p>Siia tuleb nimekiri Tartu padelikeskustest.</p>
-  <div class="filters">
-    <button type="button" data-filter="all">Kõik</button>
-    <button type="button" data-filter=".indoor">Sisehallid</button>
-    <button type="button" data-filter=".outdoor">Väliväljakud</button>
+    <div class="filters">
+      <button type="button" data-filter="all">Kõik</button>
+      <button type="button" data-filter=".indoor">Sisehallid</button>
+      <button type="button" data-filter=".outdoor">Väliväljakud</button>
   </div>
-  </header>
+
+  </main>
 
 
   <div class="grid-container">
@@ -27,7 +34,11 @@
     <div class="grid-item mix indoor">Tõrvandi Padel Park</div>
   </div>
 
-<script src="https://cdn.jsdelivr.net/npm/mixitup@3.3.1/dist/mixitup.min.js"></script>
+  <footer>
+    <p>Valum veebileht</p>
+  </footer>
+
+<script src="mixitup.min.js"></script>
 <script>
   mixitup('.grid-container');
 </script>

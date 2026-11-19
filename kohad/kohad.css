@@ -1,5 +1,6 @@
 body {
-  background-color: #eaf4ea;
+  background-color: #fff;
+  color: #222;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -11,36 +12,27 @@ body {
   padding: 20px;
 }
 
-header {
-  background-color: #1f5d2c;
-  color: #eaf4ea;
-  padding: 20px;
-  text-align: left;
-}
-
 a {
   display: inline-block;
 }
 
 .nav-button {
-  background: #265630;
-  color: #eaf4ea;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  padding: 10px 20px;
+  background: #222;
+  color: #fff;
+  padding: 5px 10px;
   margin-right: 10px;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.1s, color 0.1s;
 }
 
 .nav-button:hover {
-  background: #308843;
-  color: #eaf4ea;
+  background: #444;
+  color: #fff;
 }
 
 button {
-  background: #265630;
-  color: #eaf4ea;
+  background: #222;
+  color: #fff;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-top: none;
@@ -52,29 +44,27 @@ button {
 }
 
 .filters button.mixitup-control-active {
-  background: #329b4985;
-  color: #eaf4ea;
+  background: #555;
+  color: #fff;
 }
 
 .filters button:hover {
-  background: #308843;
-  color: #eaf4ea;
+  background: #444;
+  color: #fff;
 }
-
-
 
 .grid-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #1f5d2c;
+  background-color: #222;
   border: 1px solid #ccc;
   width: calc((100% - 60px) / 4);
   height: 160px;
   padding: 20px;
   text-align: center;
   box-sizing: border-box;
-  color: #eaf4ea;
+  color: #fff;
 }
 
 .filters {
