@@ -1,0 +1,89 @@
+body {
+  background-color: #fff;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 20px;
+  padding: 20px;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+a {
+  display: inline-block;
+}
+
+.nav-button {
+  background: #222;
+  color: #fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 10px 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+  background: #444;
+  color: #fff;
+}
+
+button {
+  background: #222;
+  color: #fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: none;
+  border-bottom: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filters button.mixitup-control-active {
+  background: #555;
+  color: #fff;
+}
+
+.filters button:hover {
+  background: #444;
+  color: #fff;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #222;
+  border: 1px solid #ccc;
+  width: calc((100% - 60px) / 4);
+  height: 160px;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.filters {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .grid-item {
+    width: calc((100% - 20px) / 2);
+  }
+}

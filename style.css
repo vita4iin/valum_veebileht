@@ -11,7 +11,8 @@ body {
 
 header {
     background: #222;
-    padding: 20px;
+    padding: 15px;
+    height: 60px;
 }
 
 nav {
@@ -35,8 +36,26 @@ main {
 }
 
 footer {
-    padding: 20px;
     text-align: center;
     background: #222;
     color: #fff;
+    padding: 15px;
+    height: 60px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.nav-button {
+  background: #222;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: background-color 0.1s, color 0.1s;
+}
+
+.nav-button:hover {
+  background: #444;
+  color: #fff;
 }
