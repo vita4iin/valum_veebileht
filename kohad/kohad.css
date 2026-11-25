@@ -1,0 +1,92 @@
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+button {
+  background: #222;
+  color: #fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: none;
+  border-bottom: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.1s, color 0.1s;
+}
+
+.filters button.mixitup-control-active {
+  background: #555;
+  color: #fff;
+}
+
+.filters button:hover {
+  background: #444;
+  color: #fff;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  border: 1px solid #ccc;
+  width: calc((100% - 60px) / 4);
+  padding: 0 0 15px;
+  text-align: center;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.grid-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.grid-item h2 {
+  margin: 12px 10px 4px;
+  font-size: 18px;
+}
+
+.grid-item p {
+  margin: 4px 10px;
+  font-size: 14px;
+}
+
+.grid-item a {
+  margin-top: auto;
+  padding-top: 10px;
+  color: #fff;
+}
+
+.grid-item.varsti {
+  justify-content: center;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .grid-item {
+    width: calc((100% - 40px) / 3);
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-item {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+@media (max-width: 420px) {
+  .grid-item {
+    width: 100%;
+  }
+}
