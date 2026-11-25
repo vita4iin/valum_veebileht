@@ -12,6 +12,7 @@ body {
 header {
     background: #222;
     padding: 20px;
+    justify-content: center;
 }
 
 nav {
@@ -29,9 +30,7 @@ nav a:hover {
 }
 
 main {
-    max-width: 1000px;
     margin: 0 auto;
-    padding: 40px 20px;
 }
 
 footer {

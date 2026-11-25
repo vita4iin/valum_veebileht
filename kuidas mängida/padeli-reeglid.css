@@ -328,9 +328,42 @@ h1 i, h2 em {
   border-top: var(--line);
   font-size: 12px;
   letter-spacing: .09em;
+  background: var(--green);
 }
 .site-footer a { 
     color: var(--lime); 
     text-decoration: none; 
 }
 
+.progress-bar {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--muted);
+}
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: var(--green);
+  width: 0%;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  filter: blur(4px);
+
+  transition:
+    opacity .7s ease,
+    transform .7s ease,
+    filter .7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
